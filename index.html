@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/Todo.css">
+</head>
+<body>
+    <div class="container"> 
+        <p id="first">
+        <label for="newTask">Add Task</label>
+        <input type="text" name="Addtask" id="newTask">
+        <button onclick="addTask()">Add</button>
+   
+        </p>
+    <h3>TODO</h3>
+    <ul id="incompleteTask">
+        <li>
+            <input type="checkbox"  id=""> 
+            <label for="">Pay Bill</label>
+            <input type="text">
+            <button class="Edit">Edit</button>
+            <button class="Delete">Delete</button>
+        </li>
+        
+        <li class="editMode">
+            <input type="checkbox" > 
+            <label for="">Buy Food</label>
+            <input type="text" value="Buy Food">
+            <button class="Edit">Edit</button>
+            <button class="Delete">Delete</button>
+        </li>
+
+    </ul>
+        <h3> COMPLETED </h3>
+     <ul id="completedTask">
+        
+        <li >
+            <input type="checkbox"  id="" checked> 
+            <label for="">Submit work</label>
+            <input type="text" >
+            <button class="Edit">Edit</button>
+            <button class="Delete">Delete</button>
+        </li>
+
+    </ul>
+    </div>
+    <script src="resources/js/Todo.js"></script>
+</body>
+</html>
